@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');:root{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
+
+:root {
     font-size: 16px;
     font-family: 'Open Sans';
     --text-primary: #000000;
@@ -7,65 +9,70 @@
     --bg-primary: #FAAF40;
     --bg-secondary: #141418;
 }
-
-body{
-    color: black;
-    background-color: white;
+.sticky {
+	background-color: #ffffff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+.ul-nav {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-body::-webkit-scrollbar{
-    width: 0.25rem;
-}
-body::-webkit-scrollbar-track{
-    background:#1e1e24;
-}
-body::-webkit-scrollbar-thumb{
-    background:#6649b8;
-}
-
-main{
-    margin-left: 5rem;
-    padding:1rem;
-}
-.navbar{
-    font-family: 'Roboto', sans-serif;
-    width: 5rem;
-    height: 100vh;
-    position: fixed;
+    overflow: hidden;
     background-color: var(--bg-primary);
-    padding-top: 1rem;
 }
-.navbar-nav{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    transition: 0.3s;
+.li-nav {
+    float: left;
 }
-.nav-item:last-child{
-    margin-top: auto;
-}
-.nav-link{
-    display: flex;
-    align-items: center;
-    height: 5rem;
+.li-nav a{
+    display: block;
     color: var(--text-primary);
-    text-decoration: none;
-    transition: 0.3s;
-}
-.subtext{
     text-align: center;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.7s;
 }
-.link-text{
-    writing-mode: vertical-lr;
+.li-nav a:hover:not(.active) {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    fill: var(--text-secondary);
+}
+.li-right{
+    float: right;
+    display: block;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.7s;
 }
 
-.content-left{
+.leftSide,.rightSide{
+    height: 100vh;
+    width: 100%;
+}
+.rightSide{
     background-color: #262261;
+}
+.leftSide{
+    background-color: #EE4036;
+}
+
+#hi-there, #name, #Full-Stack-Developer{
+    font-size: 60px;
+}
+#hi-there,#Full-Stack-Developer{
+    color: white;
+    transition: 0.7s;
+}
+#name{
+    color: var(--bg-primary);
+    transition: 0.7s;
+}
+#name:hover{
+    color: white;
+}
+#Full-Stack-Developer:hover, #hi-there:hover{
+    color: var(--bg-primary);
 }
