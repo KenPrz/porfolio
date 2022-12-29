@@ -9,6 +9,8 @@
     --text-secondary: #ececec;
     --bg-primary: #FAAF40;
     --bg-secondary: #141418;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .sticky {
 	background-color: #ffffff;
@@ -163,8 +165,8 @@ nav{
 
 /*----------------------------------------------------*/
 .button3 {
-	width: 150px;
-	padding: 12px;
+	width: 200px;
+	padding: 25px;
 	border: none;
 	outline: none;
 	border-radius: 5px;
@@ -197,6 +199,13 @@ nav{
 .hover-btn3:hover span::after {
 	opacity: 1;
 	right: 0;
+}
+.button-container3{
+    padding-right: 5rem;
+    margin: auto;
+	display: flex;
+	justify-content: right;
+	align-items: right;
 }
 
 .flex-container {
