@@ -9,7 +9,7 @@
     --text-secondary: #ececec;
     --bg-primary: #FAAF40;
     --bg-secondary: #141418;
-    overflow-y: hidden; /* Hide vertical scrollbar */
+    /*overflow-y: hidden; /* Hide vertical scrollbar
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .sticky {
@@ -138,6 +138,7 @@ nav{
 	display: inline-block;
 	cursor: pointer;
 	transition: 0.5s;
+    
 }
 .hover-btn span::after {
 	position: absolute;
@@ -219,4 +220,52 @@ nav{
     margin: 10px;
     line-height: 75px;
     font-size: 30px;
+}
+/*----------------------------------------------------*/
+/* CONTACTS HTML*/
+/*----------------------------------------------------*/
+.contact-body{
+    background-color: #262261;
+    height: 100vh;
+    width: 100%;
+    color: var(--text-secondary );
+    
+}
+.contact-body h1{
+    font-size: 60px;
+    font-weight: 650;
+    padding-left: 2rem;
+    transition: .5s;
+}
+.contact-body h1:hover{
+    color: var(--bg-primary);
+}
+.contact-body ul{
+    list-style-type: none;
+}
+.contact-body li{
+    margin-left: .3rem;
+    fill: var(--text-secondary);
+    padding: .2rem;
+    font-size: 1.2rem;
+}
+.contact-body a{
+    text-decoration: none;
+    color: var(--bg-primary);
+    transition: 0.5s;
+}
+.contact-body a:hover{
+    color: #EE4036;
+}
+.profile-card img{
+    width: 27rem;
+    border-radius: 5rem;
+    border: .5rem var(--bg-primary) solid;
+    max-width: 100%; 
+    height: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: .5s;
+}
+.profile-card img:hover{
+    border: .5rem #EE4036 solid;
 }
